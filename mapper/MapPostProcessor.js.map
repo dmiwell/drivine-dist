@@ -1,0 +1,1 @@
+{"version":3,"file":"MapPostProcessor.js","sourceRoot":"","sources":["../../src/mapper/MapPostProcessor.ts"],"names":[],"mappings":";;;AAEA,MAAa,gBAAgB;IACzB,YAAqB,WAAiC;QAAjC,gBAAW,GAAX,WAAW,CAAsB;IAAG,CAAC;IAE1D,KAAK,CAAC,OAAc;QAChB,OAAO,OAAO,CAAC,GAAG,CAAC,CAAC,EAAE,EAAE,EAAE,CAAC,IAAI,CAAC,WAAW,CAAC,EAAE,CAAC,CAAC,CAAC;IACrD,CAAC;CACJ;AAND,4CAMC"}

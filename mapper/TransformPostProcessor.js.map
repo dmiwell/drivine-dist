@@ -1,0 +1,1 @@
+{"version":3,"file":"TransformPostProcessor.js","sourceRoot":"","sources":["../../src/mapper/TransformPostProcessor.ts"],"names":[],"mappings":";;;AAEA,yDAAiD;AAEjD,MAAa,sBAAsB;IAC/B,YAAqB,IAAoB;QAApB,SAAI,GAAJ,IAAI,CAAgB;IAAG,CAAC;IAE7C,KAAK,CAAC,OAAc;QAChB,OAAO,IAAA,gCAAY,EAAC,IAAI,CAAC,IAAI,EAAE,OAAO,CAAC,CAAC;IAC5C,CAAC;CACJ;AAND,wDAMC"}

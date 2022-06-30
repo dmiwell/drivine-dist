@@ -1,0 +1,1 @@
+{"version":3,"file":"AgensRowResultMapper.js","sourceRoot":"","sources":["../../src/mapper/AgensRowResultMapper.ts"],"names":[],"mappings":";;;AAIA,MAAa,oBAAoB;IAC7B,eAAe,CAAI,OAAc,EAAE,IAA2B;QAC1D,IAAI,CAAC,cAAc,CAAC,OAAO,CAAC,CAAC,SAA8B,EAAE,EAAE;YAC3D,OAAO,GAAG,SAAS,CAAC,KAAK,CAAC,OAAO,CAAC,CAAC;QACvC,CAAC,CAAC,CAAC;QACH,OAAO,OAAO,CAAC;IACnB,CAAC;CACJ;AAPD,oDAOC"}
