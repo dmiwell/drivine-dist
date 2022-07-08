@@ -2,7 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.LogMessage = void 0;
 const shared_utils_1 = require("@nestjs/common/utils/shared.utils");
-require('source-map-support').install({
+const SourceMapSupport = require("source-map-support");
+SourceMapSupport.install({
     environment: 'node'
 });
 class LogMessage {
