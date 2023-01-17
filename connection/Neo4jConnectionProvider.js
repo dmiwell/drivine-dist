@@ -4,7 +4,8 @@ exports.Neo4jConnectionProvider = void 0;
 const Neo4jConnection_1 = require("./Neo4jConnection");
 const Neo4jResultMapper_1 = require("../mapper/Neo4jResultMapper");
 const neo = require('neo4j-driver');
-const shortId = require("shortid");
+const short_unique_id_1 = require("short-unique-id");
+const shortId = new short_unique_id_1.default({ length: 7 });
 class Neo4jConnectionProvider {
     constructor(name, type, host, port, user, password, database, protocol = 'bolt', config) {
         this.name = name;
@@ -23,7 +24,7 @@ class Neo4jConnectionProvider {
         const session = this.driver.session({
             database: this.database
         });
-        session['sessionId'] = shortId.generate();
+        session['sessionId'] = shortId();
         const connection = new Neo4jConnection_1.Neo4jConnection(session, new Neo4jResultMapper_1.Neo4jResultMapper());
         return Promise.resolve(connection);
     }

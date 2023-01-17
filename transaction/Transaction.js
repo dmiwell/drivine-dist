@@ -5,12 +5,13 @@ const ts_data_stack_1 = require("ts-data.stack");
 const assert = require("assert");
 const DrivineError_1 = require("../DrivineError");
 const logger_1 = require("../logger");
-const shortId = require("shortid");
+const short_unique_id_1 = require("short-unique-id");
+const shortId = new short_unique_id_1.default({ length: 7 });
 class Transaction {
     constructor(options, contextHolder) {
         this.contextHolder = contextHolder;
         this.logger = new logger_1.DrivineLogger(Transaction.name);
-        this.id = shortId.generate();
+        this.id = shortId();
         this.callStack = new ts_data_stack_1.default();
         this.connectionRegistry = new Map();
         this.cursors = [];

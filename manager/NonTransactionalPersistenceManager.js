@@ -15,13 +15,13 @@ class NonTransactionalPersistenceManager {
     async query(spec) {
         const connection = await this.connectionProvider.connect();
         try {
-            return await connection.query(spec);
+            const result = await connection.query(spec);
+            await connection.release();
+            return result;
         }
         catch (e) {
+            await connection.release(e);
             throw DrivineError_1.DrivineError.withRootCause(e, spec);
-        }
-        finally {
-            await connection.release();
         }
     }
     async execute(spec) {
